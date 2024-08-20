@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('https://i.redd.it/w5b5o2tfli581.gif') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    font-size: 1.5em;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-menu li {
+    position: relative;
+    margin: 0 10px;
+}
+
+.navbar-menu .dropdown-toggle {
+    text-decoration: none;
+    background-image: url(https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-6/455913570_1039435474854222_2087385272390830377_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=cFeD4F5SiSEQ7kNvgFA9BZl&_nc_ht=scontent-iad3-1.xx&oh=00_AYDNJddi0Ok4pEfMDT7cTQ9tIfLrivFAG_8CRwhJssR18g&oe=66C95046);
+    color: peru;
+    font-size: 1em;
+    display: block;
+    padding: 10px;
+}
+
+.navbar-menu .dropdown-menu {
+    display: none; /* Hide dropdowns by default */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 200px; /* Adjust width as needed */
+}
+
+.navbar-menu .dropdown-menu li {
+    padding: 10px;
+    color: #fff;
+}
+
+.navbar-menu .dropdown-menu li:hover {
+    background-color: #444;
+}
+
+.navbar-menu .dropdown-menu a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+}
+
+/* Log Container Styles */
+.log-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    color: peru;
+    padding: 10px;
+    border-radius: 10px;
+    width: 80%; /* Adjust width as needed */
+    max-width: 600px; /* Adjust max-width as needed */
+    height: 33vh; /* 33% of viewport height */
+    overflow-y: auto; /* Add vertical scroll if content exceeds height */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional: adds shadow effect */
+    text-align: left; /* Align text to the left */
+}
+
+.log-container p {
+    color: peru;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}

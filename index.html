@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ms. Cindy's Eatery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="navbar-brand">Ms. Cindy's Eatery</a>
+            <ul class="navbar-menu">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Appetizers</a>
+                    <ul class="dropdown-menu" id="appetizers-menu">
+                        <!-- Appetizers items will be dynamically added here -->
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Drinks</a>
+                    <ul class="dropdown-menu" id="drinks-menu">
+                        <!-- Drinks items will be dynamically added here -->
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Entrees</a>
+                    <ul class="dropdown-menu" id="entrees-menu">
+                        <!-- Entrees items will be dynamically added here -->
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Desserts</a>
+                    <ul class="dropdown-menu" id="desserts-menu">
+                        <!-- Desserts items will be dynamically added here -->
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Sides</a>
+                    <ul class="dropdown-menu" id="sides-menu">
+                        <!-- Sides items will be dynamically added here -->
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Log Container -->
+    <div class="log-container">
+        <p id="log"></p>
+    </div>
+
+    <!-- Audio Element -->
+    <audio id="background-audio" autoplay>
+        <source src="https://drive.google.com/file/d/140JEZ05idrSZJIAajTASUZM3dUuXqYqn/view?usp=drive_link" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script type="module" src="restaurant.mjs"></script>
+</body>
+</html>
